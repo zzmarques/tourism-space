@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import logo from "../../assets/imgs/logo.svg";
+import logo from "../../../public/assets/imgs/logo.svg";
 import styles from "./Header.module.css";
 import { useState } from 'react';
-import menuHanb from "../../assets/shared/icon-hamburger.svg";
-import close from "../../assets/shared/icon-close.svg";
+import menuHanb from "../../../public/assets/shared/icon-hamburger.svg";
+import close from "../../../public/assets/shared/icon-close.svg";
 
 const Header = () => {
 
