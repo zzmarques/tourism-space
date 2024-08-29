@@ -1,0 +1,222 @@
+.home {
+    background: url("./imgs/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    max-width: 540px;
+    height: 343px;
+}
+
+.textos span, p {
+    font-family: "Barlow", sans-serif;
+    color: #D0D6F9;
+}
+
+.textos span {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.textos h1 {
+    font-family: "Bellefair", serif;
+    font-size: 144px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.textos p {
+    font-size: 18px;
+    line-height: 180%;
+}
+
+.container_btn {
+    max-width: 540px;
+    height: 272px;
+    
+}
+
+.btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    background: white;
+    width: 272px;
+    height: 272px;
+
+    border-radius: 50%;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 272px;
+    height: 272px;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 50%;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.btn:hover::before {
+    width: 150%;
+    height: 150%;
+}
+
+.btn span {
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #0B0D17;
+    position: relative;
+    z-index: 777;
+}
+
+
+
+.sla {
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+    .home {
+        background: url("./imgs/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+    }
+
+    .textos {
+        align-items: center;
+        max-width: 512px;
+        
+    }
+
+
+    .textos span,
+    .textos h1,
+    .textos p {
+        text-align: center;
+    }
+
+    .textos span {
+        font-size: 22px;
+    }
+
+    .textos h1 {
+       letter-spacing: 4px;
+    }
+
+    .textos p {
+        font-size: 16px;
+    }
+
+      
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .home {
+        background: url("./imgs/background-home-mobile.jpg");
+        background-position: bottom ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 820px;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        width: 327px;
+        height: 676px;
+        gap: 48px;
+        margin: 20px auto;
+    }
+
+    .textos {
+        align-items: center;
+        max-width: 327px;
+        height: 294px;
+        gap: 24px;
+        
+    }
+
+    .textos span,
+    .textos h1,
+    .textos p {
+        text-align: center;
+    }
+
+    .textos span {
+        font-size: 16px;
+    }
+
+    .textos h1 {
+        font-size: 80px;
+       letter-spacing: 0px;
+    }
+
+    .textos p {
+        font-size: 15px;
+    }
+
+    .container_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        height: 382px;
+        
+    }
+    
+    .btn {
+        width: 144px;
+        height: 144px;
+    }
+
+    .btn span {
+        font-size: 18px;
+    }
+
+    .btn:hover::before {
+        width: 90%;
+        height: 90%;
+    }
+}

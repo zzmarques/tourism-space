@@ -1,0 +1,285 @@
+.crew {
+    background: url("./background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.main  h1 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.main  span {
+    font-weight: bold;
+    letter-spacing: 4.72px;
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 24px;
+}
+
+.main section {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 539px;
+}
+
+.text span {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.542);
+}
+
+.text h1 {
+    font-family: "Bellefair", serif;
+    font-size: 50px;
+    color: white;
+}
+
+.text p {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    line-height: 180%;
+}
+
+.image {
+    width: 450px;
+}
+
+.image img {
+    position: fixed;
+    top: 162px;
+    right: 190px;
+    height: 460px;
+}
+
+.slid {
+    display: flex;
+    align-items: flex-start;
+    height: 30px;
+    gap: 20px ;
+    margin-bottom: 50px;
+    
+    
+}
+
+.slid div {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #979797;
+}
+
+.slid div:hover {
+    background: white;
+}
+
+.show {
+    background: white !important;
+}
+
+.hiden {
+    background: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .crew {
+        background: url("./background-crew-tablet.jpg");
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main h1 {
+        font-size: 21px;
+    }
+
+
+    .main section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .content {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 512px;
+        height: 305px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 512px;
+        height: 305px;
+        margin-top: 80px;
+    }
+
+    .text span, .text h1, .text p {
+        text-align: center;
+    } 
+
+    .text span {
+        font-size: 26px;
+    }
+
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 668px;
+        height: 463px;
+        
+
+    }
+    
+    .image img {
+        position: fixed;
+        top: 573px;
+        right: 190px;
+        height: 490px;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .crew {
+        background: url("./background-crew-mobile.jpg");
+        background-position: bottom ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 820px;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 327px;
+        height: 690px;
+        gap: 24px;
+        margin: 20px auto;
+    }
+
+    .main h1 {
+        font-size: 16px;
+        letter-spacing: 15%;
+    }
+
+
+    .main section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 327px;
+        height: 645px;
+    }
+
+    .content {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 327px;
+        height: 319px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        height: 245px;
+        gap: 0px;
+        margin-top: 0px;
+    }
+
+    .text span, .text h1, .text p {
+        text-align: center;
+    } 
+
+    .text span {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .text h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .slid {
+        justify-content: center;
+        width: 327px;
+        height: 10px;    
+    }
+
+    .image {
+        width: 327px;
+        height: 350px;
+
+    }
+    
+    .image img {
+        position: fixed;
+        top: 505px;
+        right: 48px;
+        height: 340px;
+    }
+
+}
