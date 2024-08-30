@@ -211,12 +211,13 @@
         height: 144px;
     }
 
-    .btn span {
-        font-size: 18px;
+    .btn::before {
+
+        width: 144px;
+        height: 144px;
     }
 
-    .btn:hover::before {
-        width: 90%;
-        height: 90%;
+    .btn span {
+        font-size: 18px;
     }
 }

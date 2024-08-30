@@ -207,9 +207,9 @@
         align-items: center;
         flex-direction: column;
         width: 327px;
-        height: 690px;
+        height: 655px;
         gap: 24px;
-        margin: 20px auto;
+        margin: 20px auto; 
     }
 
     .main h1 {
@@ -271,15 +271,15 @@
 
     .image {
         width: 327px;
-        height: 350px;
-
+        height: 280px;
     }
     
     .image img {
-        position: fixed;
-        top: 505px;
-        right: 48px;
-        height: 340px;
+        position: absolute;
+        top: 400px;
+        right: 80px;
+        height: 240px;
+        margin: auto;
     }
 
 }
