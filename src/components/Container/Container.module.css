@@ -3,7 +3,6 @@
     height: 80vh;
     position: relative;
     bottom: 0;
-    border: 1px solid red;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
