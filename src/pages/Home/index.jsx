@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <div className={styles.home}>
+        <main className={styles.home}>
             <Header/>
             <Container>
-                <main className={styles.main}>
+                <section className={styles.hero}>
                     <div className={styles.textos}>
                         <span>So, you want to travel to</span>
                         <h1>Space</h1>
@@ -20,15 +20,15 @@ const Home = () => {
                     </div>
                     <div className={styles.container_btn}>
                         
-                        <Link to="/destination" className={styles.sla}>
+                        <Link to="/destination" className={styles.link}>
                             <div className={styles.btn}>
                                 <span>Explore</span>
                             </div>
                         </Link>
                     </div>
-                </main>
+                </section>
             </Container>
-        </div>
+        </main>
     );
 }
 

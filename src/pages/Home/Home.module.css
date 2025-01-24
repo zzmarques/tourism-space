@@ -1,4 +1,104 @@
 .home {
+    background: url("./imgs/background-home-mobile.jpg");
+    background-position: bottom ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 812px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+    height: 676px;
+    gap: 48px;
+}
+
+.hero .textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    height: 294px;
+}
+
+.hero .textos span {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    letter-spacing: 15%;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.hero .textos h1 {
+    font-family: "Bellefair", serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero .textos p {
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 180%;
+    color: #D0D6F9;
+}
+
+.hero .container_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 382px;
+}
+
+.hero .container_btn .link {
+    text-decoration: none;
+}
+
+
+
+.hero .container_btn .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 144px;
+    height: 144px;
+    background: rgb(255, 255, 255, 10%);
+    border-radius: 50%;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.btn:hover::before {
+    width: 88%;
+    height: 88%;
+}
+
+.hero .container_btn .btn  span{
+    font-family: Bellefair;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #0B0D17;
+}
+
+/* .home {
     background: url("./imgs/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,25 +250,11 @@
       
 
 }
+*/
 
-@media (min-width: 320px) and (max-width: 768px) {
+/* @media (min-width: 320px) and (max-width: 768px) {
 
-    .home {
-        background: url("./imgs/background-home-mobile.jpg");
-        background-position: bottom ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 820px;
-    }
 
-    .main {
-        flex-direction: column;
-        justify-content: center;
-        width: 327px;
-        height: 676px;
-        gap: 48px;
-        margin: 20px auto;
-    }
 
     .textos {
         align-items: center;
@@ -220,4 +306,4 @@
     .btn span {
         font-size: 18px;
     }
-}
+} */
