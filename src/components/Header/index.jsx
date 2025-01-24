@@ -19,7 +19,7 @@ const Header = () => {
             </div>
             
             <nav
-                className={`${styles.navbar}  ${showMenu ? styles.open : ""}`}
+                className={`${styles.navbar}`}
             > 
                 <div className={styles.linha}></div>
 
@@ -30,20 +30,24 @@ const Header = () => {
                     <img src={showMenu ? close : menuHanb} alt="Menu hamburger"/>
                 </div>
 
-                <ul>
-                    <Link to="/">
-                        <li><span>00</span> Home</li>
-                    </Link>
-                    <Link to="/destination">
-                        <li><span>01</span> Destination</li>
-                    </Link>
-                    <Link to="/crew">
-                        <li><span>02</span> Crew</li>
-                    </Link>
-                    <Link to="/technology">
-                        <li><span>03</span> Technology</li>
-                    </Link>
-                </ul>
+                <div className={`${styles.container_navbar} ${showMenu ? styles.open : ""}`}>
+
+                    <ul>
+                        <Link to="/">
+                            <li><span>00</span> Home</li>
+                        </Link>
+                        <Link to="/destination">
+                            <li><span>01</span> Destination</li>
+                        </Link>
+                        <Link to="/crew">
+                            <li><span>02</span> Crew</li>
+                        </Link>
+                        <Link to="/technology">
+                            <li><span>03</span> Technology</li>
+                        </Link>
+                    </ul>
+
+                </div>
 
             </nav>
         </header>

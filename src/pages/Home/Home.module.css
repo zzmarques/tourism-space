@@ -25,8 +25,9 @@
 }
 
 .hero .textos span {
-    font-family: Barlow Condensed;
+    font-family: "Barlow Condensed", serif;
     font-size: 16px;
+    font-weight: 400;
     letter-spacing: 15%;
     text-transform: uppercase;
     color: #D0D6F9;
@@ -35,14 +36,16 @@
 .hero .textos h1 {
     font-family: "Bellefair", serif;
     font-size: 80px;
+    font-weight: 400;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .hero .textos p {
-    font-family: "Barlow", sans-serif;
-    text-align: center;
+    font-family: "Barlow", serif;
     font-size: 15px;
+    font-weight: 400;
+    text-align: center;
     line-height: 180%;
     color: #D0D6F9;
 }
