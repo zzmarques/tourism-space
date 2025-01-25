@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: 100%;
+    max-width: 327px;
     height: 294px;
 }
 
@@ -28,7 +28,7 @@
     font-family: "Barlow Condensed", serif;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 15%;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #D0D6F9;
 }
@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 327px;
     height: 382px;
 }
 
@@ -99,6 +99,60 @@
     font-size: 18px;
     text-transform: uppercase;
     color: #0B0D17;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .home {
+        background: url("./imgs/background-home-tablet.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100dvh;
+        overflow: hidden;
+    }
+
+    .hero {
+        width: 688px;
+        height: 672;
+    }
+
+    .hero .textos {
+        max-width: 512px;
+        height: 334px;
+    }
+
+    .hero .textos span {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+    
+    .hero .textos h1 {
+        font-size: 144px;
+    }
+    
+    .hero .textos p {
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    .hero .container_btn {
+        max-width: 512px;
+        height: 272px;
+    }
+
+    .hero .container_btn .btn {
+        width: 272px;
+        height: 272px;
+    }
+
+    .hero .container_btn .btn  span{
+        font-size: 32px;
+    }
+
+    .btn:hover::before {
+        width: 140%;
+        height: 140%;
+    }
 }
 
 /* .home {
