@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 327px;
+    width: 327px;
     height: 382px;
 }
 
@@ -75,7 +75,7 @@
     background: #FFFFFF;
 }
 
-.btn::before {
+.hero .container_btn .btn::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -89,12 +89,12 @@
     transition: all 0.3s;
 }
 
-.btn:hover::before {
+.hero .container_btn .btn:hover::before {
     width: 88%;
     height: 88%;
 }
 
-.hero .container_btn .btn  span{
+.hero .container_btn .btn span{
     font-family: Bellefair;
     font-size: 18px;
     text-transform: uppercase;
