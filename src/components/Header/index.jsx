@@ -16,12 +16,10 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.container_logo}>
                 <Link to="/"><img src={logo} alt="logo" /></Link>
+                <div className={styles.linha}></div>
             </div>
             
-            <nav
-                className={`${styles.navbar}`}
-            > 
-                <div className={styles.linha}></div>
+            <nav className={`${styles.navbar}`}> 
 
                 <div 
                     onClick={toggleMenu}
