@@ -12,24 +12,10 @@
     }
 }
 
-/* .container {
-    width: 90%;
-    height: 80vh;
-    position: relative;
-    bottom: 0;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        width: 90%;
-        height: 88vh;
-    }
-}
-
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
     .container {
         width: 100%;
-        height: auto;
-        margin-top: auto;
+        height: 888px;
+        padding: 128px 0px;
     }
-} */
+}
