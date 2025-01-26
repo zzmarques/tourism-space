@@ -197,6 +197,7 @@
     }
 
     .hero .container_btn {
+        justify-content: flex-end;
         width: 540px;
         height: 272px;
     }
