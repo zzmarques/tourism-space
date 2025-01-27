@@ -43,68 +43,70 @@ const Destination = () => {
     }
 
     return (
-        <div className={styles.destination}>
+        <main className={styles.destination}>
             <Header/>
-            <Container>
-                <main className={styles.main}>
-                    <h1><span>01</span>Pick your destination</h1>
+            <section className={styles.container_des}>
+                <Container>
+                        <div className={styles.main}>
+                            <h1><span>01</span>Pick your destination</h1>
 
-                    <section className={styles.container}>
+                            <section className={styles.container}>
 
-                        <div className={styles.container_img}>
-                            <img src={img} alt="planeta" />
-                        </div>
-
-                        
-                        <div className={styles.container_texts}>
-                                
-                            <div className={styles.btns}>
-                                <span 
-                                    onClick={() => handleInfo(0)}
-                                    className={spanInfo === ind[0] ? `${styles.show}` : `${styles.hiden}`}
-                                >Moon</span>
-                                <span 
-                                    onClick={() => handleInfo(1)}
-                                    className={spanInfo === ind[1] ? `${styles.show}` : `${styles.hiden}`}
-                                >Mars</span>
-                                <span 
-                                    onClick={() => handleInfo(2)}
-                                    className={spanInfo === ind[2] ? `${styles.show}` : `${styles.hiden}`}
-                                >Europa</span>
-                                <span  
-                                    onClick={() => handleInfo(3)} 
-                                    className={spanInfo === ind[3] ? `${styles.show}` : `${styles.hiden}`}
-                                >Titan</span>
-                            </div>
-
-                            <div className={styles.text}>
-                                <h2>{content.name}</h2>
-                                <p>
-                                    {content.description}
-                                </p>
-
-                            </div>
-
-                            <div className={styles.linha}></div>
-
-                            <div className={styles.infos}>
-                                <div className={styles.info1}>
-                                    <span>Avg. distance</span>
-                                    <p>{content.distance}</p>
+                                <div className={styles.container_img}>
+                                    <img src={img} alt="planeta" />
                                 </div>
-                                <div className={styles.info2}>
-                                    <span>Est. travel time</span>
-                                    <p>{content.travel}</p>
-                                </div>
-                            </div>
 
+                                <div className={styles.content_texts}>
+                                    <div className={styles.container_texts}>
+                                            
+                                        <div className={styles.btns}>
+                                            <span 
+                                                onClick={() => handleInfo(0)}
+                                                className={spanInfo === ind[0] ? `${styles.show}` : `${styles.hiden}`}
+                                            >Moon</span>
+                                            <span 
+                                                onClick={() => handleInfo(1)}
+                                                className={spanInfo === ind[1] ? `${styles.show}` : `${styles.hiden}`}
+                                            >Mars</span>
+                                            <span 
+                                                onClick={() => handleInfo(2)}
+                                                className={spanInfo === ind[2] ? `${styles.show}` : `${styles.hiden}`}
+                                            >Europa</span>
+                                            <span  
+                                                onClick={() => handleInfo(3)} 
+                                                className={spanInfo === ind[3] ? `${styles.show}` : `${styles.hiden}`}
+                                            >Titan</span>
+                                        </div>
+
+                                        <div className={styles.text}>
+                                            <h2>{content.name}</h2>
+                                            <p>
+                                                {content.description}
+                                            </p>
+
+                                        </div>
+
+                                        <div className={styles.linha}></div>
+
+                                        <div className={styles.infos}>
+                                            <div className={styles.info1}>
+                                                <span>Avg. distance</span>
+                                                <p>{content.distance}</p>
+                                            </div>
+                                            <div className={styles.info2}>
+                                                <span>Est. travel time</span>
+                                                <p>{content.travel}</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                            
                         </div>
-                        
-                    </section>
-                    
-                </main>
-            </Container>
-        </div>
+                </Container>
+            </section>
+        </main>
         
     )
 }

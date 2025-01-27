@@ -4,6 +4,12 @@
     background-repeat: no-repeat;
 }
 
+.container_des  {
+    min-width: 375px;
+    height: 100%;
+    padding: 24px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -34,7 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    width: 327px;
+    /* width: 327px; */
     height: 701px;
 }
 
@@ -50,21 +56,25 @@
     height: 150px;
 }
 
-.main .container .container_texts {
+.main .container .content_texts {
     height: 466px;
+}
+
+.main .container .content_texts .container_texts {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 0 auto;
 }
 
-.main .container .container_texts .btns {
+.main .container .content_texts .container_texts .btns {
     display: flex;
     gap: 32px;
     justify-content: center;
     height: 32px;
 }
 
-.main .container .container_texts .btns span {
+.main .container .content_texts .container_texts .btns span {
     height: 32px;
     font-family: "Barlow Condensed", serif;
     font-size: 14px;
@@ -90,7 +100,7 @@
     color: #D0D6F9;
 }
 
-.main .container .container_texts .text {
+.main .container .content_texts .container_texts .text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +108,7 @@
     height: 215px;
 }
 
-.main .container .container_texts .text h2 {
+.main .container .content_texts .container_texts .text h2 {
     font-family: "Bellefair", serif;
     font-size: 56px;
     font-weight: 400;
@@ -106,7 +116,7 @@
     color: #FFFFFF;
 }
 
-.main .container .container_texts .text p {
+.main .container .content_texts .container_texts .text p {
     font-family: "Barlow", serif;
     font-size: 15px;
     font-weight: 400;
@@ -116,20 +126,20 @@
 
 }
 
-.main .container .container_texts .linha {
+.main .container .content_texts .container_texts .linha {
     height: 1px;
     background: #FFFFFF;
     opacity: 25%;
 }
 
-.main .container .container_texts .infos {
+.main .container .content_texts .container_texts .infos {
     display: flex;
     flex-direction: column;
     gap: 24px;
     height: 146px;
 }
 
-.main .container .container_texts .infos .info1, .info2 {
+.main .container .content_texts .container_texts .infos .info1, .info2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +147,7 @@
     height: 61px;
 }
 
-.main .container .container_texts .infos .info1 span, .info2 span {
+.main .container .content_texts .container_texts .infos .info1 span, .info2 span {
     font-family: "Barlow Condensed", serif;
     font-size: 14px;
     font-weight: 400;
@@ -147,12 +157,83 @@
     opacity: 100% !important;
 }
 
-.main .container .container_texts .infos .info1 p, .info2 p {
+.main .container .content_texts .container_texts .infos .info1 p, .info2 p {
     font-family: "Bellefair", serif;
     font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .destination {
+        background: url("./imgs/background-destination-tablet.jpg");
+    }
+
+    .container_des {
+        padding: 40px;
+    }
+
+    .main {
+        width: 688px;
+        height: 848px;
+    }
+
+    .main h1 {
+        justify-content: flex-start;
+        height: 24px;
+        font-size: 20px;
+    }
+
+    .main .container {
+        height: 800px;
+    }
+
+    .main .container .container_img {
+        height: 384px;
+    }
+
+    .main .container .container_img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .main .container .content_texts {
+        min-width: 688px;
+        height: 384px;
+    }
+
+    .main .container .content_texts .container_texts {
+        max-width: 514px;
+        height: 361px;
+    }
+    
+    .main .container .content_texts .container_texts .btns span {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    .main .container .content_texts .container_texts .text {
+        height: 195px;
+    }
+    
+    .main .container .content_texts .container_texts .text h2 {
+        font-size: 80px;
+    }
+    
+    .main .container .content_texts .container_texts .text p {
+        font-size: 16px;    
+    }
+    
+    .main .container .content_texts .container_texts .infos {
+        flex-direction: row;
+        height: 61px;
+
+    }
+    
+    .main .container .content_texts .container_texts .infos .info1, .info2 {
+        width: 245px;
+    }
 }
 
 /* .destination {
