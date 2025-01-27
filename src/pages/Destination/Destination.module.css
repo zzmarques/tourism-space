@@ -1,4 +1,161 @@
 .destination {
+    background: url("./imgs/background-destination-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 327px;
+    height: 744px;
+}
+
+.main h1 {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: 19px;
+    font-family: "Barlow Condensed", serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main span {
+    opacity: 25%;
+    font-weight: bold;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 327px;
+    height: 701px;
+}
+
+.main .container .container_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 203px;
+}
+
+.main .container .container_img img {
+    width: 150px;
+    height: 150px;
+}
+
+.main .container .container_texts {
+    height: 466px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main .container .container_texts .btns {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    height: 32px;
+}
+
+.main .container .container_texts .btns span {
+    height: 32px;
+    font-family: "Barlow Condensed", serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    opacity: 100% !important;
+}
+
+.show {
+    color: #FFFFFF;
+    border-bottom: 3px solid white;
+}
+
+.show:hover {
+    color: #FFFFFF !important;
+    border-bottom: 3px solid white !important;
+}
+
+.hiden {
+    border: none;
+    color: #D0D6F9;
+}
+
+.main .container .container_texts .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    height: 215px;
+}
+
+.main .container .container_texts .text h2 {
+    font-family: "Bellefair", serif;
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main .container .container_texts .text p {
+    font-family: "Barlow", serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 180%;
+    color: #D0D6F9;
+
+}
+
+.main .container .container_texts .linha {
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 25%;
+}
+
+.main .container .container_texts .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 146px;
+}
+
+.main .container .container_texts .infos .info1, .info2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: 61px;
+}
+
+.main .container .container_texts .infos .info1 span, .info2 span {
+    font-family: "Barlow Condensed", serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    opacity: 100% !important;
+}
+
+.main .container .container_texts .infos .info1 p, .info2 p {
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* .destination {
     background: url("./background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -368,4 +525,4 @@
         font-size: 28px;
         margin-top: 0px;
     }
-}
+} */

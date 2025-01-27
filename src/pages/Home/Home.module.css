@@ -1,9 +1,8 @@
 .home {
     background: url("./imgs/background-home-mobile.jpg");
     background-position: bottom ;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 812px;
 }
 
 .hero {
