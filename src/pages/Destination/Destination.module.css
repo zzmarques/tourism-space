@@ -281,6 +281,8 @@
     }
 
     .main .container .content_texts {
+        display: flex;
+        align-items: center;
         min-width: 539px;
         height: 100%;
     }
