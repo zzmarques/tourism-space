@@ -16,6 +16,7 @@
     gap: 24px;
     width: 327px;
     height: 744px;
+    margin: 0 auto;
 }
 
 .main h1 {
@@ -123,7 +124,6 @@
     text-align: center;
     line-height: 180%;
     color: #D0D6F9;
-
 }
 
 .main .container .content_texts .container_texts .linha {
@@ -168,6 +168,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .destination {
         background: url("./imgs/background-destination-tablet.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .container_des {
@@ -236,374 +238,90 @@
     }
 }
 
-/* .destination {
-    background: url("./background-destination-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    max-width: 1110px;
-    height: 100%;
-    margin: auto;
-}
-
-.main h1 {
-        font-family: "Barlow", sans-serif;
-        font-weight: 400;
-        font-size: 28px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        color: white;
-}
-
-.main h1 span {
-    font-weight: bold;
-    letter-spacing: 4.72px;
-    color: rgba(255, 255, 255, 0.25);
-    padding-right: 24px;
-}
-
-.container_img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 539px;
-    height: 100%;
-}
-
-.main img {
-    width: 380px;
-    height: 380px;
-    margin-right: 60px;
-}
-
-.main section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-}
-
-.content_txt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 539px;
-    height: auto;
-}
-
-.container_texts {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 30px;
-    width: 445px;
-   
-}
-
-.btns {
-    display: flex;
-    gap: 32px;
-}
-
-.btns span {
-    color: #D0D6F9;
-    font-family: "Barlow", sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    height: 32px; 
-    cursor: pointer;
-}
-
-.btns span:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 445px;
-    height: 256px;
-
-}
-
-.text h2 {
-    
-    font-family: "Bellefair", serif;
-    font-size: 100px;
-    text-transform: uppercase;
-    color: white;
-}
-
-.text p {
-    line-height: 180%;
-    font-size: 18px;
-    color: #D0D6F9;
-}
-
-
-.linha {
-    width: 445px;
-    height: 1px;
-    background: #979797;
-}
-
-
-
-.infos {
-    display: flex;
-    gap: 90px;
-    max-width: 445px;
-    height: 61px;
-
-}
-
-.infos span {
-    font-family: "Barlow", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #D0D6F9;
-}
-
-.infos p {
-    font-family: "Bellefair", serif;
-    text-transform: uppercase;
-    font-size: 28px;
-    color: white;
-    margin-top: 12px;
-}
-
-.show {
-    border-bottom: 3px solid white;
-}
-
-.show:hover {
-    border-bottom: 3px solid white !important;
-}
-
-.hiden {
-    border: none;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
+@media (min-width: 1024px) {
     .destination {
-        background: url("./background-destination-mobile.jpg");
-    }
-    
-
-    .main h1 {
-        font-size: 21px;
-    }
-
-    .main section {
-        flex-direction: column;
-    }
-
-    .container_img,
-    .content_txt {
-        width: 688px;
-        height: 384px;
-
-    }
-
-    .container_img img {
-        margin: auto;
-        width: 300px;
-        height: 300px;
-    }
-
-    .container_texts {
-        align-items: center;
-        justify-content: center;
-        max-width: 514px;
-        height: 361px;
-        gap: 24px;
-       
-    }
-
-    .text {
-        align-items: center;
-        justify-content: center;
-        max-width: 514px;
-        height: 195px;
-    
-    }
-
-    .text h2, .text p {
-        text-align: center;
-    }
-
-    .text h2 {
-        font-size: 90px;
-    }
-
-    .text p {
-        font-size: 14px;
-    }
-
-    .linha {
-        width: 514px;
-        height: 1px;
-        background: #979797;
-    }
-
-    .infos {
-        align-items: center;
-        justify-content: center;
-        width: 514px;
-        height: 61px;
-    
-    }
-
-    .infos div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        width: 245px;
-        height: 61px;
-    }
-
-    
-
-}
-
-@media (min-width: 320px) and (max-width: 768px){
-        
-    .destination {
-        background: url("./background-destination-tablet.jpg");
-        background-position: bottom ;
+        background: url("./imgs/background-destination-desktop.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        height: 820px;
     }
-    
+
+    .container_des {
+        padding: 48px 0px;
+        height: 888px;
+    }
+
     .main {
-        align-items: center;
-        gap: 12px;
-        width: 327px;
-        height: 700px;
+        width: 1110px;
+        height: 792px;
+
     }
 
     .main h1 {
-        font-size: 16px;
-        letter-spacing: 15%;
-    }
-
-    .main section {
-        flex-direction: column;
-        width: 327px ;
-        height: 701px;
-        gap: 8px;
-    }
-
-    .container_img {
-        width: 327px;
-        height: 203px;
-    }
-
-    .container_img img {
-        margin: auto;
-        width: 150px;
-        height: 150px;
-    }
-
-    .content_txt {
-        width: 327px;
-        height: 466px;
-
-    }
-
-    .container_texts {
-        align-items: center;
-        justify-content: center;
-        max-width: 327px;
-        height: 466px;
-        gap: 12px;
-       
-    }
-
-    .btns {
-        align-items: center;
-        justify-content: center;
-        width: 327px;
-        height: 32px;
-        gap: 32px;
-    }
-
-    .btns span {
-        font-size: 14px;
-    }
-
-    .text {
-        align-items: center;
-        justify-content: center;
-        max-width: 327px;
-        height: 215px;
-        gap: 8px;
-    
-    }
-
-    .text h2, .text p {
-        text-align: center;
-    }
-
-    .text h2 {
-        font-size: 52px;
-    }
-
-    .text p {
-        font-size: 15px;
-    }
-
-    .linha {
-        width: 327px;
-        height: 1px;
-        background: #979797;
-    }
-
-
-
-    .infos {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 327px;
-        height: 146px;
-        gap: 24px;
-    
-    }
-
-    .infos div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        width: 327px;
-        height: 61px;
-        gap: 8px;
-    }
-
-    .infos span {
-        font-size: 14px;
-    }
-
-    .infos p {
+        justify-content: flex-start;
+        width: 366px;
+        height: 34px;
         font-size: 28px;
-        margin-top: 0px;
+        letter-spacing: 4px;
+
     }
-} */
+
+    .main .container {
+        flex-direction: row;
+        height: 734px;
+    }
+
+    .main .container .container_img {
+        width: 539px;
+        height: 100%;
+    }
+
+    .main .container .container_img img {
+        width: 480px;
+        height: 480px;
+    }
+
+    .main .container .content_texts {
+        min-width: 539px;
+        height: 100%;
+    }
+
+    .main .container .content_texts .container_texts {
+        max-width: 445px;
+        height: 468px;
+        gap: 40px;
+    }
+
+    .main .container .content_texts .container_texts .btns {
+        justify-content: flex-start;
+    }
+    
+    .main .container .content_texts .container_texts .btns span {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    .main .container .content_texts .container_texts .text {
+        align-items: flex-start;
+        height: 254px;
+    }
+    
+    .main .container .content_texts .container_texts .text h2 {
+        font-size: 96px;
+    }
+    
+    .main .container .content_texts .container_texts .text p {
+        text-align: left;
+        font-size: 18px;    
+    }
+    
+    .main .container .content_texts .container_texts .infos {
+        flex-direction: row;
+        height: 61px;
+    }
+    
+    .main .container .content_texts .container_texts .infos .info1, .info2 {
+        align-items: flex-start;
+        width: 210px;
+    }
+}
+
