@@ -1,19 +1,18 @@
 .crew {
     background: url("imgs/background-crew-mobile.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     background-size: cover;
 
 }
 
 .container_crew {
-    
     width: 375px;
-    height: 792px;
+    /* height: 792px; */
     padding: 24px;
+    margin: 0 auto;
 }
 
 .main {
-    
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -22,7 +21,6 @@
 }
 
 .main h1 {
-    
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -41,7 +39,6 @@
 }
 
 .main .content {
-    
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -66,7 +63,6 @@
 }
 
 .main .content .explanation_1 .explanation_2 .text {
-    
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -99,7 +95,7 @@
     
 }
 
-.main .content .explanation_1 .explanation_2 .text {
+.main .content .explanation_1 .explanation_2 .text p {
     font-family: "Barlow", serif;
     font-size: 15px;
     font-weight: 400;
@@ -139,7 +135,6 @@
 
 .main .content .image {
     position: relative;
-    
     height: 350px;
 }
 
@@ -161,6 +156,81 @@
     mask-size: contain;
 
 }
+
+@media (min-width: 768px) and (max-width: 1023px)  {
+    .crew {
+        background: url("imgs/background-crew-tablet.jpg"); 
+        background-repeat: no-repeat;   
+        background-size: cover;
+    }
+    
+    .container_crew {
+        width: 768px;
+        height: 928px;
+        padding: 40px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .main {
+        width: 688px;
+        height: 848px;
+    }
+
+    .main h1 {
+        justify-content: flex-start;
+        gap: 24px;
+        height: 24px;
+        font-size: 20px;
+    }
+
+    .main .content {
+        height: 800px;
+    }
+
+    .main .content .explanation_1 {
+        max-width: 512px;
+        height: 305px;
+        margin: 0 auto;
+    }
+
+    .main .content .explanation_1 .explanation_2 .text {
+        height: 231px;
+    }
+
+    .main .content .explanation_1 .explanation_2 .text .rn {
+        gap: 16px;
+        height: 90px;
+    }
+    
+    .main .content .explanation_1 .explanation_2 .text .rn span {
+        font-size: 24px;
+    }
+    
+    .main .content .explanation_1 .explanation_2 .text .rn h2 {
+        font-size: 40px;
+        
+    }
+    
+    .main .content .explanation_1 .explanation_2 .text p {
+        font-size: 16px;
+    }
+
+    .main .content .image {
+        position: absolute;
+        width: 688px;
+        height: 463px;
+        bottom: 0;
+    }
+
+    .main .content .image img {
+        width: 446px;
+        height: 560px;
+        mask: none;
+    }
+
+}
+
 
 
 
