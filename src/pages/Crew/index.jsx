@@ -32,18 +32,27 @@ const Crew = () => {
     }
 
     return (
-        <div className={styles.crew}>
+        <main className={styles.crew}>
             <Header/>
-            <Container>
-                <main className={styles.main}> 
-                <h1><span>02</span>Meet your crew</h1>
-                    <section>
-                            <div className={styles.content}>
-                                
-                                <div className={styles.text}>
-                                    <span>{content.role}</span>
-                                    <h1>{content.name}</h1>
-                                    <p>{content.bio}</p>
+            <section className={styles.container_crew}>
+                <Container>
+                    <div className={styles.main}> 
+                        <h1><span>02</span>Meet your crew</h1>
+                        
+                        <div className={styles.content}>
+
+                            <div className={styles.explanation_1}> 
+
+                                <div className={styles.explanation_2}> 
+
+                                    <div className={styles.text}>
+                                        <div className={styles.rn}>
+                                            <span>{content.role}</span>
+                                            <h2>{content.name}</h2>
+                                        </div>
+                                        <p>{content.bio}</p>
+                                    </div>
+
                                 </div>
 
                                 <div className={styles.slid}>
@@ -64,14 +73,17 @@ const Crew = () => {
                                         className={crewInfo === ind[3] ? `${styles.show}` : `${styles.hiden}`}
                                     ></div>
                                 </div>
+                            </div> 
+                            
+                            <div className={styles.image}>
+                                <img src={img} alt="Foto dos responsáveis" />
                             </div>
-                        <div className={styles.image}>
-                            <img src={img} alt="Foto dos responsáveis" />
                         </div>
-                    </section>
-                </main>
-            </Container>
-        </div>
+
+                    </div>
+                </Container>
+            </section>
+        </main>
     );
 }
 

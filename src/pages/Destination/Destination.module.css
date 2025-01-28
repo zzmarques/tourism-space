@@ -41,7 +41,6 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    /* width: 327px; */
     height: 701px;
 }
 
@@ -76,6 +75,7 @@
 }
 
 .main .container .content_texts .container_texts .btns span {
+    cursor: pointer;
     height: 32px;
     font-family: "Barlow Condensed", serif;
     font-size: 14px;
@@ -86,14 +86,14 @@
     opacity: 100% !important;
 }
 
-.show {
+.main .container .content_texts .container_texts .btns span:hover {
     color: #FFFFFF;
     border-bottom: 3px solid white;
 }
 
-.show:hover {
+.show {
     color: #FFFFFF !important;
-    border-bottom: 3px solid white !important;
+    border-bottom: 3px solid white;
 }
 
 .hiden {

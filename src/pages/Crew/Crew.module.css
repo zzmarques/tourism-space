@@ -1,4 +1,173 @@
 .crew {
+    background: url("imgs/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container_crew {
+    
+    width: 375px;
+    height: 792px;
+    padding: 24px;
+}
+
+.main {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 327px;
+    height: 744px;
+}
+
+.main h1 {
+    
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: 19px;
+    font-family: "Barlow Condensed", serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main span {
+    opacity: 25%;
+    font-weight: bold;
+}
+
+.main .content {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 701px;
+}
+
+.main .content .explanation_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 327px;
+    height: 319px;
+}
+
+.main .content .explanation_1 .explanation_2 {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+}
+
+.main .content .explanation_1 .explanation_2 .text {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 245px;
+}
+
+.main .content .explanation_1 .explanation_2 .text .rn {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    height: 57px;
+}
+
+.main .content .explanation_1 .explanation_2 .text .rn span, h2 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main .content .explanation_1 .explanation_2 .text .rn span {
+    font-size: 18px;
+    opacity: 50%;
+}
+
+.main .content .explanation_1 .explanation_2 .text .rn h2 {
+    font-size: 24px;
+    
+}
+
+.main .content .explanation_1 .explanation_2 .text {
+    font-family: "Barlow", serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 180%;
+    color: #D0D6F9;
+}
+
+.main .content .explanation_1 .slid {
+    
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    height: 10px;
+}
+
+.main .content .explanation_1 .slid div {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    opacity: 17.44%;
+}
+
+.main .content .explanation_1 .slid div:hover {
+    opacity: 100% !important;
+}
+
+.main .content .explanation_1 .show {
+    opacity: 100% !important;
+}
+
+.main .content .explanation_1 .hiden {
+    opacity: 17.44% !important;
+}
+
+.main .content .image {
+    position: relative;
+    
+    height: 350px;
+}
+
+.main .content .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    object-fit: contain;
+    width: 271px;
+    height: 340px;
+
+    -webkit-mask-image: linear-gradient(to bottom, rgb(217, 217, 217, 0.77) 20%, rgb(217, 217, 217, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgb(217, 217, 217, 0.77) 20%, rgb(217, 217, 217, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+}
+
+
+
+
+
+
+/* .crew {
     background: url("./background-crew-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,4 +451,4 @@
         margin: auto;
     }
 
-}
+} */
