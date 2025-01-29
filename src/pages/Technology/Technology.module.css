@@ -1,323 +1,166 @@
 .technology {
-    background: url("./background-technology-desktop.jpg");
+    background: url("imgs/background-technology-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.container_tec {
+    position: relative;
+    padding: 24px 24px 48px 24px;
+    overflow: hidden;
 }
 
 .main {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 327px;
+    margin: 0 auto;
 }
 
 .main h1 {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 28px;
-    letter-spacing: 4px;
-    color: white;
-    
-}
-
-.main h1 span {
-    font-weight: bold;
-    letter-spacing: 4.72px;
-    color: rgba(255, 255, 255, 0.25);
-    margin-right: 24px;
-}
-
-.main section {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 90%;
-    
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    height: 100%;
-}
-
-.btns {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-}
-
-.btns div{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 75px;
-    border: 1px solid white;
-    
-    font-size: 28px;
-    font-family: "Bellefair", serif;
-    color: white;
-    border-radius: 50%;
+    gap: 24px;
+    height: 19px;
+    font-family: "Barlow Condensed", serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
 }
 
-.btns div:hover {
-    background: white;
-    color: black;
+.main span {
+    opacity: 25%;
+    font-weight: bold;
 }
 
-.text {
+.main img {
+    width: 200px;
+}
+
+.main .container, .content {
     display: flex;
     flex-direction: column;
-    max-width: 491px;
-    gap: 20px;
-}
+}   
 
-.text span, .text h1 {
-    font-family: "Bellefair", serif;
-}
-
-.text span {
-    font-size: 32px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.text h1 {
-    font-size: 51px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: white;
-}
-
-.text p {
-    font-size: 18px;
-    font-family: "Barlow", sans-serif;
-    line-height: 180%;
-    color: #d0d6f9;
+.main .container {
+    gap: 32px;
+    height: 677px;
 }
 
 .imgs {
     display: flex;
-    align-items: center;
-    height: 100%;
+    align-content: flex-start;
+    position: relative;
+    height: 322px;
 }
 
-.main section img {
-    width: 450px;
-    height: 450px;
+.imgs img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    min-width: 768px;
+    height: 258px;
+    object-fit: contain;
+} 
+
+.main .container .content {
+    gap: 40px;
+    height: 323px;
+}
+
+.main .container .content .btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main .container .content .btns div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 25%);
+    border-radius: 50%;
+}
+
+.main .container .content .btns div span {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 100%;
+}
+
+.main .container .content .btns div:hover {
+    background: white;
+}
+
+.main .container .content .btns div span:hover {
+    color: #0B0D17;
 }
 
 .show {
-    background: white;
-    color: black !important;
+    background: white !important;
+}
+
+.show span {
+    color: #0B0D17 !important;
 }
 
 .hiden {
     background: none;
+}
+
+.hiden span {
     color: none;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    .technology {
-        background: url("./background-technology-tablet.jpg");
-    }
-
-    .main section {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        height: 96%;
-    }
-
-    .main h1 {
-        font-size: 21px;
-        
-    }
-
-
-    .container {
-        margin-top: 30px;
-        width: 668px;
-        height: 347px;
-    }
-    
-    .content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 668px;
-        height: 347px;
-    }
-
-    .btns {
-        display: flex;
-        flex-direction: row;
-        gap: 38px;
-    }
-
-    .text {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 512px;
-        gap: 16px;
-    }
-
-    .text span, .text h1, .text p {
-        text-align: center;
-    }
-
-    .text span {
-        font-size: 26px;
-    }
-    
-    .text h1 {
-        font-size: 46px;
-    }
-    
-    .text p {
-        font-size: 16px;
-    }
-
-    .imgs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 668px;
-        height: 421px;
-    }
-    
-    .main section img {
-        width: 768px;
-        height: 400px;
-    }
-
+.main .container .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 243px;
+    max-width: 327px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-
-    .technology {
-        background: url("./background-technology-mobile.jpg");
-        background-position: bottom ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 820px;
-        
-    }
-    
-
-    .main  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 327px;
-        height: 690px;
-        gap: 24;
-        margin: 20px auto;
-    }
-
-    .main section {
-       
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 327px;
-        height: 667px;
-        gap: 32px;
-    }
-
-    .main h1 {
-        font-size: 16px;
-        letter-spacing: 15%;
-        
-    }
-
-
-    .container {
-        width: 327px;
-        height: 323px;
-    }
-    
-    .content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 327px;
-        height: 323px;
-        gap: 40px;
-    }
-
-    .btns {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        width: 327px;
-        height: 40px;
-        gap: 16px;
-    }
-
-    .btns div {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .text {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 327px;
-        height: 243px;
-        gap: 16px;
-    }
-
-    .text span, .text h1, .text p {
-        text-align: center;
-    }
-
-    .text span {
-        font-size: 18px;
-    }
-    
-    .text h1 {
-        font-size: 24px;
-    }
-    
-    .text p {
-        font-size: 15px;
-    }
-
-    .imgs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 327px;
-        height: 322px;
-    }
-    
-    .main section img {
-        width: 373px;
-        height: 258px;
-        object-fit: cover;
-    }
-
+.main .container .content .text .rn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
+
+.main .container .content .text .rn span, h2 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main .container .content .text .rn span {
+    font-size: 18px;
+    opacity: 50%;
+}
+
+.main .container .content .text .rn h2 {
+    font-size: 24px;
+}
+
+.main .container .content .text p {
+    font-family: "Barlow", serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 180%;
+    color: #D0D6F9;
+}
+
+
+
