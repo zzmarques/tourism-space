@@ -154,7 +154,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px)  {
+@media (min-width: 768px) and (max-width: 1023px) {
     .crew {
         background: url("imgs/background-crew-tablet.jpg"); 
         background-repeat: no-repeat;   

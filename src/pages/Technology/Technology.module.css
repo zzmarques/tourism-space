@@ -2,7 +2,6 @@
     background: url("imgs/background-technology-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .container_tec {
@@ -38,10 +37,6 @@
     font-weight: bold;
 }
 
-.main img {
-    width: 200px;
-}
-
 .main .container, .content {
     display: flex;
     flex-direction: column;
@@ -54,16 +49,14 @@
 
 .imgs {
     display: flex;
-    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 322px;
+    padding-top: 64px;
 }
 
 .imgs img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
     min-width: 768px;
     height: 258px;
     object-fit: contain;
@@ -162,5 +155,78 @@
     color: #D0D6F9;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .technology {
+        background: url("imgs/background-technology-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    .container_tec {
+        position: relative;
+        padding: 40px;
+        overflow: hidden;
+    }
+    
+    .main {
+        width: 688px;
+        height: 848px;
+    }
 
+    .main h1 {
+        justify-content: flex-start;
+        gap: 24px;
+        height: 24px;
+        font-size: 20px;
+    }  
+    
+    .main .container {
+        height: 800px;
+    }
+
+    .imgs {
+        height: 421px;
+    }
+    
+    .imgs img {
+        min-width: 768px;
+        height: 357px;
+        object-fit: cover;
+    } 
+
+    .main .container .content {
+        height: 347px;
+    }
+
+    .main .container .content .btns {
+        width: 512px;
+        margin: 0 auto;
+    }
+    
+    .main .container .content .btns div {
+        width: 56px;
+        height: 56px;
+    }
+
+    .main .container .content .btns div span {
+        font-size: 24px;
+    }
+
+    .main .container .content .text {
+        height: 251px;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+    
+    .main .container .content .text .rn span {
+        font-size: 24px;
+    }
+    
+    .main .container .content .text .rn h2 {
+        font-size: 40px;
+    }
+    
+    .main .container .content .text p {
+        font-size: 16px;
+    }
+}
