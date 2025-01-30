@@ -156,6 +156,11 @@
         margin: 0;
     }
 
+    .navbar .container_navbar ul li {
+        align-items: center;
+        height: 96px;
+    }
+
     .navbar .container_navbar ul li::before {
         display: block;
     }
