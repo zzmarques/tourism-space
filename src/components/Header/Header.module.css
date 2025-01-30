@@ -70,11 +70,28 @@
 }
 
 .navbar .container_navbar ul li {
+    position: relative;
     display: flex;
     gap: 8px;
     width: 100%;
     height: 19px;
     text-decoration: none;
+}
+
+.navbar .container_navbar ul li::before {
+    display: none;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #FFFFFF;
+    transition: all .7s ease;
+}
+
+.navbar .container_navbar ul li:hover::before {
+    width: 100%;
+    height: 2px;
 }
 
 .navbar .container_navbar ul a {
@@ -137,6 +154,10 @@
         width: 100%;
         height: 100%;
         margin: 0;
+    }
+
+    .navbar .container_navbar ul li::before {
+        display: block;
     }
 }
 
@@ -209,5 +230,9 @@
         width: 100%;
         height: 96px;
         text-decoration: none;
+    }
+
+    .navbar .container_navbar ul li::before {
+        display: block;
     }
 }

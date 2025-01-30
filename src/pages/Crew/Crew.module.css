@@ -116,6 +116,7 @@
     border-radius: 50%;
     background: #FFFFFF;
     opacity: 17.44%;
+    transition: opacity .7s ease;
 }
 
 .main .content .explanation_1 .slid div:hover {

@@ -75,6 +75,8 @@
 }
 
 .main .container .content_texts .container_texts .btns span {
+    position: relative;
+    z-index: 2;
     cursor: pointer;
     height: 32px;
     font-family: "Barlow Condensed", serif;
@@ -84,20 +86,43 @@
     text-transform: uppercase;
     color: #D0D6F9;
     opacity: 100% !important;
+    transition: color .7s ease;
+}
+
+.main .container .content_texts .container_texts .btns span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #FFFFFF;
+    transition: all .7s ease;
+}
+
+.main .container .content_texts .container_texts .btns span:hover::before {
+    width: 100%;
+    height: 2px;
 }
 
 .main .container .content_texts .container_texts .btns span:hover {
     color: #FFFFFF;
-    border-bottom: 3px solid white;
+}
+
+.show::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
 }
 
 .show {
     color: #FFFFFF !important;
-    border-bottom: 3px solid white;
 }
 
 .hiden {
-    border: none;
     color: #D0D6F9;
 }
 
