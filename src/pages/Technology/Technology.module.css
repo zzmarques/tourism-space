@@ -86,7 +86,7 @@
     font-family: "Bellefair", serif;
     font-size: 18px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #FFFFFF ;
     opacity: 100%;
 }
 
@@ -94,7 +94,7 @@
     background: white;
 }
 
-.main .container .content .btns div span:hover {
+.main .container .content .btns div:hover span {
     color: #0B0D17;
 }
 
