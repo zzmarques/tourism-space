@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Header from "../../components/Header"
 import Container from "../../components/Container"
 import styles from "./Crew.module.css"
@@ -7,29 +7,57 @@ import  data from "../../json/data.json"
 
 const Crew = () => {
 
+    // http://localhost:3000/destinations
+    // http://localhost:3000/crew
+    // http://localhost:3000/technology
+
     let content = '';
     let img = '';
     const ind = [0, 1, 2, 3];
+    let date;
 
     const [ crewInfo, setCrewInfo ] = useState(0);
+    const [ data, setData ] = useState([]);
 
     const handleCrewInfo = (index) => {
         setCrewInfo(index)
     }
 
-    if(crewInfo === 0) {
-        content = data.crew[0]
-        img = content.images.png
-    } else if(crewInfo === 1) {
-        content = data.crew[1]
-        img = content.images.png
-    } else if(crewInfo === 2) {
-        content = data.crew[2]
-        img = content.images.png
-    } else if(crewInfo === 3) {
-        content = data.crew[3]
-        img = content.images.png
-    }
+    useEffect(() => {
+        const requesteApi = async () => {
+            const url = 'http://localhost:3000/crew';
+            const response = await fetch(url)
+                .then(response => response.json())
+                .then(response => response)
+                .catch(error => console.log(error))
+            setData(response);
+        }
+        requesteApi();
+
+    }, [])
+
+    data.forEach((item, i) => {
+        if (crewInfo === i) {
+            date = item
+        }
+    })
+
+    console.log(date)
+    
+
+    // if(crewInfo === 0) {
+    //     content = data.crew[0]
+    //     img = content.images.png
+    // } else if(crewInfo === 1) {
+    //     content = data.crew[1]
+    //     img = content.images.png
+    // } else if(crewInfo === 2) {
+    //     content = data.crew[2]
+    //     img = content.images.png
+    // } else if(crewInfo === 3) {
+    //     content = data.crew[3]
+    //     img = content.images.png
+    // }
 
     return (
         <main className={styles.crew}>
@@ -47,10 +75,10 @@ const Crew = () => {
 
                                     <div className={styles.text}>
                                         <div className={styles.rn}>
-                                            <span>{content.role}</span>
-                                            <h2>{content.name}</h2>
+                                            <span>{date.role}</span>
+                                            <h2>{date.name}</h2>
                                         </div>
-                                        <p>{content.bio}</p>
+                                        <p>{date.bio}</p>
                                     </div>
 
                                 </div>
@@ -76,7 +104,7 @@ const Crew = () => {
                             </div> 
                             
                             <div className={styles.image}>
-                                <img src={img} alt="Foto dos responsáveis" />
+                                <img src={date.images.webp} alt="Foto dos responsáveis" />
                             </div>
                         </div>
 
