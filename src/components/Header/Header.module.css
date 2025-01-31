@@ -113,6 +113,17 @@
     display: flex;
 }
 
+.active::after {
+    display: none;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .header {
         height: 96px;
@@ -162,6 +173,10 @@
     }
 
     .navbar .container_navbar ul li::before {
+        display: block;
+    }
+
+    .active::after {
         display: block;
     }
 }
@@ -238,6 +253,10 @@
     }
 
     .navbar .container_navbar ul li::before {
+        display: block;
+    }
+
+    .active::after {
         display: block;
     }
 }

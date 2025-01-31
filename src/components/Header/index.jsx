@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from "../../../public/assets/imgs/logo.svg";
 import styles from "./Header.module.css";
 import { useState } from 'react';
@@ -6,6 +6,8 @@ import menuHanb from "../../../public/assets/shared/icon-hamburger.svg";
 import close from "../../../public/assets/shared/icon-close.svg";
 
 const Header = () => {
+
+    const location = useLocation();
 
     const [ showMenu, setShowMenu ] = useState(false)
     const toggleMenu = () => {
@@ -32,16 +34,16 @@ const Header = () => {
 
                     <ul>
                         <Link to="/">
-                            <li><span>00</span> Home</li>
+                            <li className={location.pathname === '/' ? `${styles.active}` : ''}><span>00</span> Home</li>
                         </Link>
                         <Link to="/destination">
-                            <li><span>01</span> Destination</li>
+                            <li className={location.pathname === '/destination' ? `${styles.active}` : ''}><span>01</span> Destination</li>
                         </Link>
                         <Link to="/crew">
-                            <li><span>02</span> Crew</li>
+                            <li className={location.pathname === '/crew' ? `${styles.active}` : ''}><span>02</span> Crew</li>
                         </Link>
                         <Link to="/technology">
-                            <li><span>03</span> Technology</li>
+                            <li className={location.pathname === '/technology' ? `${styles.active}` : ''}><span>03</span> Technology</li>
                         </Link>
                     </ul>
 
