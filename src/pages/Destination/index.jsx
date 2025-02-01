@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Container from "../../components/Container";
 import styles from "./Destination.module.css";
@@ -9,38 +9,39 @@ import  data from "../../json/data.json";
 
 const Destination = () => {
 
-    let content = '';
-    let img = '';
     const ind = [0, 1, 2, 3];
+    const [ desInfo, setDesInfo] = useState(0);
+    // const [ dados, setDados ] = useState([]); // variável responsável para guardar os dados da API
 
-    const [ spanInfo, setSpanInfo] = useState(0);
-
+    let date = {};
     const handleInfo = (index) => {
-        setSpanInfo(index);
+        setDesInfo(index);
         
     }
 
-    if(spanInfo === 0) {
+/*
+    Função que consome a REST API e obtém dados.
 
-        content = data.destinations[0]
-        img = content.images.png
+    useEffect(() => {
+        const requestApi = async () => {
+            const url = 'http://localhost:3000/destinations';
+            const dates = await fetch(url)
+                .then(response => response.json())
+                .then(response => response)
+                .catch(error => console.log(error))
+            
+            setDados(dates);
+        }
+        requestApi();
 
-    } else if(spanInfo === 1) {
+    }, []);
+*/
 
-        content = data.destinations[1]
-        img = content.images.png
-
-    } else if(spanInfo === 2) {
-
-        content = data.destinations[2]
-        img = content.images.png
-
-    } else if(spanInfo === 3) {
-
-        content = data.destinations[3]
-        img = content.images.png
-        
-    }
+    data.destinations.forEach((item, i) => {
+        if(desInfo === i) {
+            date = item;
+        }
+    });
 
     return (
         <main className={styles.destination}>
@@ -53,7 +54,7 @@ const Destination = () => {
                             <section className={styles.container}>
 
                                 <div className={styles.container_img}>
-                                    <img src={img} alt="planeta" />
+                                    <img src={date.images.webp} alt="planeta" />
                                 </div>
 
                                 <div className={styles.content_texts}>
@@ -62,26 +63,26 @@ const Destination = () => {
                                         <div className={styles.btns}>
                                             <span 
                                                 onClick={() => handleInfo(0)}
-                                                className={spanInfo === ind[0] ? `${styles.show}` : `${styles.hiden}`}
+                                                className={desInfo === ind[0] ? `${styles.show}` : `${styles.hiden}`}
                                             >Moon</span>
                                             <span 
                                                 onClick={() => handleInfo(1)}
-                                                className={spanInfo === ind[1] ? `${styles.show}` : `${styles.hiden}`}
+                                                className={desInfo === ind[1] ? `${styles.show}` : `${styles.hiden}`}
                                             >Mars</span>
                                             <span 
                                                 onClick={() => handleInfo(2)}
-                                                className={spanInfo === ind[2] ? `${styles.show}` : `${styles.hiden}`}
+                                                className={desInfo === ind[2] ? `${styles.show}` : `${styles.hiden}`}
                                             >Europa</span>
                                             <span  
                                                 onClick={() => handleInfo(3)} 
-                                                className={spanInfo === ind[3] ? `${styles.show}` : `${styles.hiden}`}
+                                                className={desInfo === ind[3] ? `${styles.show}` : `${styles.hiden}`}
                                             >Titan</span>
                                         </div>
 
                                         <div className={styles.text}>
-                                            <h2>{content.name}</h2>
+                                            <h2>{date.name}</h2>
                                             <p>
-                                                {content.description}
+                                                {date.description}
                                             </p>
 
                                         </div>
@@ -91,11 +92,11 @@ const Destination = () => {
                                         <div className={styles.infos}>
                                             <div className={styles.info1}>
                                                 <span>Avg. distance</span>
-                                                <p>{content.distance}</p>
+                                                <p>{date.distance}</p>
                                             </div>
                                             <div className={styles.info2}>
                                                 <span>Est. travel time</span>
-                                                <p>{content.travel}</p>
+                                                <p>{date.travel}</p>
                                             </div>
                                         </div>
 
