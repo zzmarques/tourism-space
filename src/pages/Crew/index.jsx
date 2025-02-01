@@ -7,14 +7,30 @@ import  data from "../../json/data.json"
 
 const Crew = () => {
 
-    const ind = [0, 1, 2, 3];
     let date;
 
     const [ crewInfo, setCrewInfo ] = useState(0);
+    // const [ data, setData ] = useState([]); responsável para guardar os dados da API
 
     const handleCrewInfo = (index) => {
         setCrewInfo(index)
-    }
+    }  
+/*
+    Função que consome a REST API e obtém dados.
+
+    useEffect(() => {
+        const requesteApi = async () => {
+            const url = 'http://localhost:3000/crew';
+            const response = await fetch(url)
+                .then(response => response.json())
+                .then(response => response)
+                .catch(error => console.error(error))
+            setData(response);
+        }
+        requesteApi();
+
+    }, []);
+*/
 
     data.crew.forEach((item, i) => {
         if (crewInfo === i) {
