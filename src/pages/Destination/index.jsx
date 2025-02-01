@@ -12,15 +12,15 @@ const Destination = () => {
     const ind = [0, 1, 2, 3];
     const [ desInfo, setDesInfo] = useState(0);
     // const [ dados, setDados ] = useState([]); // variável responsável para guardar os dados da API
-
     let date = {};
+
     const handleInfo = (index) => {
         setDesInfo(index);
         
     }
 
 /*
-    Função que consome a REST API e obtém dados.
+    // Função que consome a REST API e obtém dados.
 
     useEffect(() => {
         const requestApi = async () => {

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Header from "../../components/Header"
 import Container from "../../components/Container"
 import styles from "./Crew.module.css"
@@ -9,12 +9,31 @@ const Crew = () => {
 
     const ind = [0, 1, 2, 3];
     const [ crewInfo, setCrewInfo ] = useState(0);
-    let date;
+    // const [ dados, setDados ] = useState([]); // variável responsável para guardar os dados da API
+
+    let date = {};
 
     const handleCrewInfo = (index) => {
         setCrewInfo(index);
-    }  
+    } 
 
+/*
+    // Função que consome a REST API e obtém dados.
+
+    useEffect(() => {
+        const requestApi = async () => {
+            const url = 'http://localhost:3000/crew';
+            const dates = await fetch(url)
+                .then(response => response.json())
+                .then(response => response)
+                .catch(error => console.log(error))
+
+            setDados(dates);
+        }
+        requestApi();
+
+    }, []);
+*/
     data.crew.forEach((item, i) => {
         if (crewInfo === i) {
             date = item;
