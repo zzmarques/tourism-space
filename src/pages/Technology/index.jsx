@@ -6,12 +6,19 @@ import  data from "../../json/data.json"
 
 const Technology = () => {
 
-    let content = '';
-    let imgPortrait = '';
-    let imgLandscape = '';
-    const ind = [0, 1, 2, 3];
-
     const [ width, setWidth ] = useState(window.innerWidth);
+    const [ tecInfo, setTecInfo ] = useState(0);
+    // const [ dados, setDados ] = useState([]); // variável responsável para guardar os dados da API
+    const ind = [0, 1, 2, 3];
+    
+    let date = {};
+    let imgPortrait;
+    let imgLandscape;
+
+    const handleTec = (index) => {
+        setTecInfo(index);
+    }
+
     useEffect(() => {
         const handleResize = () => {
             setWidth(window.innerWidth)
@@ -24,32 +31,32 @@ const Technology = () => {
 
     }, []);
 
+/*
+    Função que consome a REST API e obtém dados.
 
-    const [ tecInfo, setTecInfo ] = useState(0);
-    const handleTec = (index) => {
-        setTecInfo(index);
-    }
+    useEffect(() => {
+        const requestApi = async () => {
+            const url = 'http://localhost:3000/technology';
+            const dates = await fetch(url)
+                .then(response => response.json())
+                .then(response => response)
+                .catch(error => console.log(error))
+            
+            setDados(dates);
+        }
+        requestApi();
 
-    if(tecInfo === 0) {
+    }, []);
+*/
 
-        content = data.technology[0]
-        imgPortrait = content.images.portrait
-        imgLandscape = content.images.landscape
-
-    } else if(tecInfo === 1) {
-
-        content = data.technology[1];
-        imgPortrait = content.images.portrait;
-        imgLandscape = content.images.landscape;
-
-    } else if(tecInfo === 2) {
-
-        content = data.technology[2];
-        imgPortrait = content.images.portrait;
-        imgLandscape = content.images.landscape;
-    }
-
-
+    data.technology.forEach((item, i) => {
+        if (tecInfo === i) {
+            date = item;
+            imgPortrait = date.images.portrait;
+            imgLandscape = date.images.landscape;
+        }
+    });
+    
     return (
         <div className={styles.technology}>
             <Header/>
@@ -89,9 +96,9 @@ const Technology = () => {
                                 <div className={styles.text}>
                                     <div className={styles.rn}>
                                         <span>The terminology...</span>
-                                        <h2>{content.name}</h2>
+                                        <h2>{date.name}</h2>
                                     </div>
-                                    <p>{content.description}</p>
+                                    <p>{date.description}</p>
                                 </div>
                             </div>
 
