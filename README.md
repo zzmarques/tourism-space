@@ -29,7 +29,7 @@ _ **ESLint** → Ferramenta para padronização e linting do código JavaScript/
 
 - **Informações Detalhadas:** Fornece dados sobre planetas, tripulações e lançamentos de naves espaciais.
 
-- **Gerenciamento Dinâmico de Dados:* Utiliza um arquivo JSON para organizar e atualizar informações sobre tripulantes, naves e planetas.
+- **Gerenciamento Dinâmico de Dados:** Utiliza um arquivo JSON para organizar e atualizar informações sobre tripulantes, naves e planetas.
 
 - **Navegação Suave:** Garante uma experiência de usuário fluida e intuitiva.
 
