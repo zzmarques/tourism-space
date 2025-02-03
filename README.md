@@ -36,22 +36,22 @@ _ **ESLint** → Ferramenta para padronização e linting do código JavaScript/
 
 ## 📂 **Estrutura do Projeto**
 
-├── public              # Arquivos públicos (favicons, imagens estáticas, etc.)
-│   ├── assets          # Recursos estáticos (imagens, fontes, etc.)
-│   └── favicon.svg     # Ícone do site
-├── src                 # Código-fonte do projeto
-│   ├── components      # Componentes reutilizáveis
-│   ├── pages           # Páginas do projeto
-│   ├── router          # Configuração de rotas (React Router)
-│   ├── main.jsx        # Arquivo principal da aplicação
-│   └── App.jsx         # Componente raiz
-├── .gitignore          # Arquivos ignorados pelo Git
-├── .gitattributes      # Configurações do Git
-├── index.html          # Estrutura principal da aplicação (carregado pelo Vite)
-├── package.json        # Dependências e scripts do projeto
-├── vite.config.js      # Configurações do Vite
-├── README.md           # Documentação do projeto
-└── LICENSE             # Licença do projeto
+├── public              # Arquivos públicos (favicons, imagens estáticas, etc.)</br>
+│   ├── assets          # Recursos estáticos (imagens, fontes, etc.)</br>
+│   └── favicon.svg     # Ícone do site</br>
+├── src                 # Código-fonte do projeto</br>
+│   ├── components      # Componentes reutilizáveis</br>
+│   ├── pages           # Páginas do projeto</br>
+│   ├── router          # Configuração de rotas (React Router)</br>
+│   ├── main.jsx        # Arquivo principal da aplicação</br>
+│   └── App.jsx         # Componente raiz</br>
+├── .gitignore          # Arquivos ignorados pelo Git</br>
+├── .gitattributes      # Configurações do Git</br>
+├── index.html          # Estrutura principal da aplicação (carregado pelo Vite)</br>
+├── package.json        # Dependências e scripts do projeto</br>
+├── vite.config.js      # Configurações do Vite</br>
+├── README.md           # Documentação do projeto</br>
+└── LICENSE             # Licença do projeto</br>
 
 
 
