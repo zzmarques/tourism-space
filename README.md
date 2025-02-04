@@ -20,6 +20,7 @@
 - **CSS3** → Para estilização e design responsivo.
 - **React Router** → Biblioteca para gerenciamento de rotas em aplicações React.
 _ **ESLint** → Ferramenta para padronização e linting do código JavaScript/JSX.
+- **Figma** → Ferramenta de design e prototipação para UI/UX.
 
 
 ## 🚀 **Recursos Principais**
